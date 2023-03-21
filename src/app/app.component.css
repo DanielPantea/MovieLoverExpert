@@ -1,0 +1,24 @@
+.header {
+  background-image: url("/assets/Header.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  height: 10%
+}
+
+.logo{
+  height: 80px;
+  position: fixed;
+  top: 10px;
+  left: 20px;
+}
+
+.container {
+  background-image: url("/assets/SiteBG.jpg");
+  position: fixed;
+  height: 90%;
+  min-height: 90%;
+  width: 100%;
+  min-width: 100%;
+}
