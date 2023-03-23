@@ -3,5 +3,11 @@
 </div>
 
 <div class="container">
-  <question-card></question-card>
+  <button *ngIf="questionIndex == -1" mat-raised-button color="warn" class="start-button" (click)="startQuestions()">START</button>
+  <question-card
+    *ngIf="questionIndex != -1 && questionIndex < 10"
+    (previousQuestionEvent)="onPreviousQuestion()"
+    (nextQuestionEvent)="onNextQuestion($event)"
+    [question]="questionService.questions[questionIndex]"
+  ></question-card>
 </div>

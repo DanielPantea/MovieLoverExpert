@@ -7,6 +7,10 @@ import {MatSidenavModule} from "@angular/material/sidenav";
 import {QuestionCardComponent} from "./question-card/question-card.component";
 import {MatCardModule} from "@angular/material/card";
 import {MatButtonModule} from "@angular/material/button";
+import {MatRadioModule} from "@angular/material/radio";
+import {FormsModule} from "@angular/forms";
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import {MatButtonModule} from "@angular/material/button";
     BrowserAnimationsModule,
     MatSidenavModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatRadioModule,
+    FormsModule,
+    MatCheckboxModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

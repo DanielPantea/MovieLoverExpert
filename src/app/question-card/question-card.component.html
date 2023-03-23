@@ -1,10 +1,22 @@
 <mat-card class="question-card">
   <mat-card-header>
-    <mat-card-title>Actions Buttons</mat-card-title>
-    <mat-card-subtitle>Start</mat-card-subtitle>
+    <mat-card-title>{{question.title}}</mat-card-title>
+    <mat-card-subtitle *ngIf="question.subtitle != ''">{{question.subtitle}}</mat-card-subtitle>
   </mat-card-header>
-  <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
+  <mat-card-content>
+    <div *ngIf="!question.isMultiSelect; else isMultiSelect">
+      <mat-radio-group [(ngModel)]="selectedAnswer" class="answer-radio-group">
+        <mat-radio-button *ngFor="let answer of question.answers" [value]="answer" class="answer-radio-button">{{answer.title}}</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <ng-template #isMultiSelect>
+      <div *ngFor="let genre of question.answers">
+        <mat-checkbox [checked]="getIndexOf(genre) > -1" (change)="toggleMovieGenre(genre)">{{genre.title}}</mat-checkbox>
+      </div>
+    </ng-template>
+  </mat-card-content>
+  <mat-card-actions class="question-card-actions">
+    <button mat-button (click)="onPrevious()">PREVIOUS</button>
+    <button mat-button (click)="onNext()" disabled="{{selectedAnswer?.length == 0}}">NEXT</button>
   </mat-card-actions>
 </mat-card>
