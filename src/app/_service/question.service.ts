@@ -40,7 +40,7 @@ export class QuestionService{
             id: 3,
             title: "Not recommended below 15",
             subtitle: "",
-            value: ">=15",
+            value: ">15",
             imagePath: "../../assets/n15.png"
           }
         ]
@@ -49,7 +49,7 @@ export class QuestionService{
         id: 2,
         title: "Who are you watching with?",
         subtitle: "",
-        isMultiSelect: false,
+        isMultiSelect: true,
         answers: [
           {
             id: 1,
@@ -154,28 +154,6 @@ export class QuestionService{
       },
       {
         id: 4,
-        title: "Do you prefer fiction or stories based on true events?",
-        subtitle: "",
-        isMultiSelect: false,
-        answers: [
-          {
-            id: 1,
-            title: "Fiction",
-            subtitle: "",
-            value: "fiction",
-            imagePath: "../../assets/fiction.png"
-          },
-          {
-            id: 2,
-            title: "Based on true events",
-            subtitle: "",
-            value: "events",
-            imagePath: "../../assets/trueEvents.png"
-          }
-        ]
-      },
-      {
-        id: 5,
         title: "Do you have a favorite movie studio?",
         subtitle: "",
         isMultiSelect: false,
@@ -184,35 +162,35 @@ export class QuestionService{
             id: 1,
             title: "A24",
             subtitle: "",
-            value: "a24",
+            value: "A24",
             imagePath: "../../assets/a24.png"
           },
           {
             id: 2,
             title: "Pixar",
             subtitle: "",
-            value: "pixar",
+            value: "Pixar",
             imagePath: "../../assets/pixar.png"
           },
           {
             id: 3,
             title: "Warner Bros.",
             subtitle: "",
-            value: "wb",
+            value: "Warner Bros",
             imagePath: "../../assets/wb.png"
           },
           {
             id: 4,
-            title: "Paramount",
+            title: "Paramount Pictures",
             subtitle: "",
-            value: "paramount",
+            value: "Paramount Pictures",
             imagePath: "../../assets/paramount.png"
           },
           {
             id: 5,
-            title: "Universal",
+            title: "Universal Pictures",
             subtitle: "",
-            value: "universal",
+            value: "Universal Pictures",
             imagePath: "../../assets/universal.png"
           },
           {
@@ -226,11 +204,25 @@ export class QuestionService{
             id: 7,
             title: "Metro-Goldwyn-Mayer",
             subtitle: "",
-            value: "mgm",
+            value: "Metro-Goldwyn-Mayer",
             imagePath: "../../assets/mgm.png"
           },
           {
             id: 8,
+            title: "Dream Works",
+            subtitle: "",
+            value: "DreamWorks",
+            imagePath: "../../assets/dreamworks.png"
+          },
+          {
+            id: 9,
+            title: "Miramax Films",
+            subtitle: "",
+            value: "Miramax Films",
+            imagePath: "../../assets/miramax.png"
+          },
+          {
+            id: 10,
             title: "Other",
             subtitle: "",
             value: "",
@@ -239,29 +231,7 @@ export class QuestionService{
         ]
       },
       {
-        id: 6,
-        title: "Do you prefer Art-House or Blockbuster movies?",
-        subtitle: "",
-        isMultiSelect: false,
-        answers: [
-          {
-            id: 1,
-            title: "Art-House",
-            subtitle: "",
-            value: "art-house",
-            imagePath: "../../assets/oscar.png"
-          },
-          {
-            id: 2,
-            title: "Blockbuster",
-            subtitle: "",
-            value: "blockbuster",
-            imagePath: "../../assets/blockbuster.png"
-          }
-        ]
-      },
-      {
-        id: 7,
+        id: 5,
         title: "Do you like movie franchises?",
         subtitle: "",
         isMultiSelect: false,
@@ -270,20 +240,20 @@ export class QuestionService{
             id: 1,
             title: "Yes",
             subtitle: "",
-            value: "franchise",
+            value: "yes",
             imagePath: "../../assets/franchise.png"
           },
           {
             id: 2,
             title: "No",
             subtitle: "",
-            value: "non-franchise",
+            value: "no",
             imagePath: "../../assets/notFranchise.png"
           }
         ]
       },
       {
-        id: 8,
+        id: 6,
         title: "How long do you like your movies?",
         subtitle: "",
         isMultiSelect: false,
@@ -299,20 +269,20 @@ export class QuestionService{
             id: 2,
             title: "Over 2 hours",
             subtitle: "",
-            value: ">2h",
+            value: ">2h,<3h",
             imagePath: "../../assets/over2.png"
           },
           {
             id: 3,
             title: "Over 3 hours",
             subtitle: "",
-            value: ">3h",
+            value: ">=3h",
             imagePath: "../../assets/over3.png"
           }
         ]
       },
       {
-        id: 9,
+        id: 7,
         title: "Do you have a favorite actor?",
         subtitle: "",
         isMultiSelect: false,
@@ -397,7 +367,7 @@ export class QuestionService{
         ]
       },
       {
-        id: 10,
+        id: 8,
         title: "Do you have a favorite director?",
         subtitle: "",
         isMultiSelect: false,
@@ -468,16 +438,14 @@ export class QuestionService{
         ]
       }
     ]
-
-    console.log(this.questions)
   }
 
-  getRecommendedMovie(facts: string): Observable<string> {
+  getRecommendedMovie(facts: any): Observable<any> {
 
     let factsBody = {
-      "facts": ["drama","war", ">15", "alone", "Spike Lee",">2h,<3h"]
+      "facts": facts
     }
 
-    return this.http.post<string>(`${environment.apiUrl}/detect`, factsBody);
+    return this.http.post(`${environment.apiUrl}/detect`, factsBody, { responseType: 'text' })
   }
 }

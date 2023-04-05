@@ -38,15 +38,15 @@ export class AppComponent implements OnInit{
 
     if(answers instanceof Array)
       answers.forEach(a => this.facts.push(a.value));
-    else
+    else if (answers.value != "")
       this.facts.push(answers.value)
 
 
-    console.log("facts: " + JSON.stringify(this.facts));
+    // console.log("facts: " + JSON.stringify(this.facts));
 
     this.questionIndex++;
 
-    if(this.questionIndex == 10)
+    if(this.questionIndex == 8)
       this.getRecommendedMovie();
 
   }
@@ -62,17 +62,18 @@ export class AppComponent implements OnInit{
         this.facts.splice(index,1);
     })
 
-    console.log("facts: " + JSON.stringify(this.facts));
+    // console.log("facts: " + JSON.stringify(this.facts));
   }
 
   getRecommendedMovie(): void {
 
-    this.questionService.getRecommendedMovie(JSON.stringify(this.facts)).subscribe(
+    this.questionService.getRecommendedMovie(this.facts).subscribe(
       (movie: string) => {
-        this.recommendedMovie = movie
+        this.recommendedMovie = movie.toString();
+        this.questionIndex = -1;
       },
       (error) => console.log(error)
-    );
+    );;
   }
 
 }

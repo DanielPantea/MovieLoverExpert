@@ -4,10 +4,19 @@
 
 <div class="container">
   <button *ngIf="questionIndex == -1" mat-raised-button color="warn" class="start-button" (click)="startQuestions()">START</button>
+  <mat-card *ngIf="questionIndex == -1 && recommendedMovie != ''" class="title-card">
+    <mat-card-header>
+      <mat-card-title>Our Recommendation:</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>{{recommendedMovie}}</mat-card-content>
+  </mat-card>
   <question-card
-    *ngIf="questionIndex != -1 && questionIndex < 10"
+    *ngIf="questionIndex != -1 && questionIndex < 8"
     (previousQuestionEvent)="onPreviousQuestion()"
     (nextQuestionEvent)="onNextQuestion($event)"
     [question]="questionService.questions[questionIndex]"
   ></question-card>
+  <mat-card *ngIf="questionIndex == 10">
+
+  </mat-card>
 </div>

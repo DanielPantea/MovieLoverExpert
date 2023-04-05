@@ -19,7 +19,7 @@ export class QuestionCardComponent {
 
   onNext(): void {
     this.nextQuestionEvent.emit(this.selectedAnswer);
-    console.log(this.selectedAnswer)
+    // console.log(this.selectedAnswer)
     this.selectedAnswer = [];
   }
 
