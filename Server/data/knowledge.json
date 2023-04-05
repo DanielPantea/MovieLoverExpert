@@ -1,0 +1,654 @@
+{
+  "target": [
+    {
+      "name": "Dr. Strangelove",
+      "rules": {
+        "genre": ["comedy", "war"],
+        "age": "12-15",
+        "company": ["alone"],
+        "studio": "Shepperton Studios",
+        "franchise": "no",
+        "actor": "Peter Sellers",
+        "director": "Stanley Kubrick",
+        "runtime": "<=2h"
+      }
+    },
+    {
+      "name": "Inception",
+      "rules": {
+        "genre": ["action", "adventure", "sci-Fi"],
+        "age": "12-15",
+        "company": ["alone", "friends"],
+        "studio": "Warner Bros",
+        "franchise": "no",
+        "actor": "Leonardo DiCaprio",
+        "director": "Christopher Nolan",
+        "runtime": ">2h,<3h"
+      }
+    },
+    {
+      "name": "Casablanca",
+      "rules": {
+        "genre": ["drama", "romance", "war"],
+        "age": "<12",
+        "company": ["alone", "friends"],
+        "studio": "Warner Bros",
+        "franchise": "no",
+        "actor": "Ingrid Bergman",
+        "director": "Michael Curtiz",
+        "runtime": "<=2h"
+      }
+    },
+    {
+      "name": "The Princess and the Frog",
+      "rules": {
+        "genre": ["animation", "adventure", "comedy"],
+        "age": "<12",
+        "company": ["alone", "friends", "family"],
+        "studio": "Walt Disney",
+        "franchise": "no",
+        "actor": "Oprah Winfrey",
+        "director": "Ron Clements",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "Schindler's List",
+      "rules": {
+        "genre": ["drama"],
+        "age": ">15",
+        "company": ["alone", "friends"],
+        "studio": "Universal Pictures",
+        "franchise": "no",
+        "actor": "Liam Neeson",
+        "director": "Steven Spielberg",
+        "runtime": ">=3h"
+      }
+    },
+	{
+      "name": "North by Northwest",
+      "rules": {
+        "genre": ["thriller", "mystery"],
+        "age": "12-15",
+        "company": ["alone", "friends"],
+        "studio": "Metro-Goldwyn-Mayer",
+        "franchise": "no",
+        "actor": "Cary Grant",
+        "director": "Alfred Hitchcock",
+        "runtime": ">2h,<3h"
+      }
+    },
+	{
+      "name": "Kung Fu Panda",
+      "rules": {
+        "genre": ["comedy", "adventure", "animation"],
+        "age": "<12",
+        "company": ["alone", "friends", "family"],
+        "studio": "DreamWorks",
+        "franchise": "yes",
+        "actor": "Angelina Jolie",
+        "director": "Mark Osborne",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "Pulp Finction",
+      "rules": {
+        "genre": ["drama"],
+        "age": ">15",
+        "company": ["alone", "friends"],
+        "studio": "Miramax Films",
+        "franchise": "no",
+        "actor": "Francis Ford Coppola",
+        "director": "Quentin Tarantino",
+        "runtime": ">2h,<3h"
+      }
+    },
+	{
+      "name": "The Silence of the Lambs",
+      "rules": {
+        "genre": ["drama", "mystery", "thriller"],
+        "age": ">15",
+        "company": ["alone", "friends"],
+        "studio": "Orion Pictures",
+        "franchise": "no",
+        "actor": "Anthony Hopkins",
+        "director": "Jonathan Demme",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "Marvel's the Avengers",
+      "rules": {
+        "genre": ["action", "adventure", "sci-Fi"],
+        "age": ">15",
+        "company": ["alone", "friends"],
+        "studio": "Walt Disney",
+        "franchise": "yes",
+        "actor": "Robert Downey Jr.",
+        "director": "Joss Whedon",
+        "runtime": ">2h,<3h"
+      }
+    },
+	{
+      "name": "The Dark Knight",
+      "rules": {
+        "genre": ["action", "adventure"],
+        "age": "12-15",
+        "company": ["alone", "friends"],
+        "studio": "Warner Bros",
+        "franchise": "yes",
+        "actor": "Heath Ledger",
+        "director": "Christopher Nolan",
+        "runtime": ">2h,<3h"
+      }
+    },
+	{
+      "name": "Da 5 Bloods",
+      "rules": {
+        "genre": ["drama", "war"],
+        "age": ">15",
+        "company": ["alone", "friends"],
+        "studio": "40 Acres and a Mule Filmworks",
+        "franchise": "no",
+        "actor": "Jean Reno",
+        "director": "Spike Lee",
+        "runtime": ">2h,<3h"
+      }
+    },
+	{
+      "name": "The Sparks Brothers",
+      "rules": {
+        "genre": ["documentary"],
+        "age": ">15",
+        "company": ["alone"],
+        "studio": "Focus Features",
+        "franchise": "no",
+        "actor": "Neil Gaiman",
+        "director": "Edgar Wright",
+        "runtime": ">2h,<3h"
+      }
+    },
+	{
+      "name": "Pirates of the Carribbean: Dead Men Tell No Tales",
+      "rules": {
+        "genre": ["action", "adventure"],
+        "age": "12-15",
+        "company": ["alone"],
+        "studio": "Walt Disney",
+        "franchise": "yes",
+        "actor": "Johnny Depp",
+        "director": "Espen Sandberg",
+        "runtime": ">2h,<3h"
+      }
+    },
+	{
+      "name": "Florence Foster Jenkins",
+      "rules": {
+        "genre": ["comedy", "drama"],
+        "age": "12-15",
+        "company": ["alone", "friends"],
+        "studio": "Paramount Pictures",
+        "franchise": "no",
+        "actor": "Meryl Streep",
+        "director": "Stephen Frears",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "The Grand Budapest Hotel",
+      "rules": {
+        "genre": ["comedy", "drama"],
+        "age": ">15",
+        "company": ["alone", "friends"],
+        "studio": "Fox Searchlight",
+        "franchise": "no",
+        "actor": "Ralph Fiennes",
+        "director": "Wes Anderson",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "As Good As It Gets",
+      "rules": {
+        "genre": ["comedy", "romance"],
+        "age": "12-15",
+        "company": ["alone", "friends"],
+        "studio": "Sony Pictures",
+        "franchise": "no",
+        "actor": "Jack Nicholson",
+        "director": "James L. Brooks",
+        "runtime": ">2h,<3h"
+      }
+    },
+	{
+      "name": "Hustle",
+      "rules": {
+        "genre": ["drama"],
+        "age": ">15",
+        "company": ["alone", "friends"],
+        "studio": "Netflix",
+        "franchise": "no",
+        "actor": "Adam Sandler",
+        "director": "Jeremiah Zagar",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "Eleven Days in May",
+      "rules": {
+        "genre": ["documentary", "war"],
+        "age": ">15",
+        "company": ["alone"],
+        "studio": "Revolution Films",
+        "franchise": "no",
+        "actor": "Kate Winslet",
+        "director": "Michael Winterbottom",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "Phantom Thread",
+      "rules": {
+        "genre": ["drama", "romance"],
+        "age": ">15",
+        "company": ["alone", "friends"],
+        "studio": "Focus Features",
+        "franchise": "no",
+        "actor": "Daniel Day-Lewis",
+        "director": "Paul Thomas Anderson",
+        "runtime": ">2h,<3h"
+      }
+    },
+	{
+      "name": "A Bronx Tale",
+      "rules": {
+        "genre": ["drama"],
+        "age": ">15",
+        "company": ["alone", "friends"],
+        "studio": "Price Entertainment",
+        "franchise": "no",
+        "actor": "Robert De Niro",
+        "director": "Robert De Niro",
+        "runtime": ">2h,<3h"
+      }
+    },
+	{
+      "name": "Police Story 2",
+      "rules": {
+        "genre": ["action"],
+        "age": "12-15",
+        "company": ["alone", "friends"],
+        "studio": "Paragon Films",
+        "franchise": "yes",
+        "actor": "Jackie Chan",
+        "director": "Jackie Chan",
+        "runtime": ">2h,<3h"
+      }
+    },
+	{
+      "name": "Mary Reilly",
+      "rules": {
+        "genre": ["drama"],
+        "age": ">15",
+        "company": ["alone", "friends"],
+        "studio": "TriStar Pictures",
+        "franchise": "no",
+        "actor": "Julia Roberts",
+        "director": "Stephen Frears",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "Metropolis",
+      "rules": {
+        "genre": ["drama", "sci-Fi"],
+        "age": "12-15",
+        "company": ["alone"],
+        "studio": "Paramount Pictures",
+        "franchise": "no",
+        "actor": "Brigitte Helm",
+        "director": "Fritz Lang",
+        "runtime": ">2h,<3h"
+      }
+    },
+	{
+      "name": "Nosferatu",
+      "rules": {
+        "genre": ["horror"],
+        "age": ">15",
+        "company": ["alone"],
+        "studio": "Film Arts Guild",
+        "franchise": "no",
+        "actor": "Max Schreck",
+        "director": "F. W. Murnau",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "Psycho",
+      "rules": {
+        "genre": ["horror", "thriller"],
+        "age": ">15",
+        "company": ["alone"],
+        "studio": "Paramount Pictures",
+        "franchise": "no",
+        "actor": "Anthony Perkins",
+        "director": "Alfred Hitchcock",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "The Birds",
+      "rules": {
+        "genre": ["mystery", "thriller"],
+        "age": "12-15",
+        "company": ["alone"],
+        "studio": "Universal Pictures",
+        "franchise": "no",
+        "actor": "Rod Taylor",
+        "director": "Alfred Hitchcock",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "After the Rehearsal",
+      "rules": {
+        "genre": ["drama"],
+        "age": ">15",
+        "company": ["alone", "friends"],
+        "studio": "Universal Pictures",
+        "franchise": "no",
+        "actor": "Ingrid Thulin",
+        "director": "Ingmar Bergman",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "The Kreutzer Sonata",
+      "rules": {
+        "genre": ["drama"],
+        "age": ">15",
+        "company": ["alone", "friends"],
+        "studio": "Axiom Films",
+        "franchise": "no",
+        "actor": "Danny Huston",
+        "director": "Bernard Rose",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "From the Life of the Marionettes",
+      "rules": {
+        "genre": ["drama"],
+        "age": ">15",
+        "company": ["alone", "friends"],
+        "studio": "Axiom Films",
+        "franchise": "no",
+        "actor": "Robert Atzorn",
+        "director": "Ingmar Bergman",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "Gone With the Wind",
+      "rules": {
+        "genre": ["romance", "drama"],
+        "age": "<12",
+        "company": ["alone", "friends", "family"],
+        "studio": "Metro-Goldwyn-Mayer",
+        "franchise": "no",
+        "actor": "Vivien Leigh",
+        "director": "Victor Fleming",
+        "runtime": ">=3h"
+      }
+    },
+	{
+      "name": "Captain Blood",
+      "rules": {
+        "genre": ["adventure", "drama"],
+        "age": "12-15",
+        "company": ["alone", "friends"],
+        "studio": "Warner Bros",
+        "franchise": "no",
+        "actor": "Olivia de Havilland",
+        "director": "Michael Curtiz",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "Bringing Up Baby",
+      "rules": {
+        "genre": ["comedy"],
+        "age": "<12",
+        "company": ["alone", "friends", "family"],
+        "studio": "RKO Radio Pictures",
+        "franchise": "no",
+        "actor": "Cary Grant",
+        "director": "Howard Hawks",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "Arsenic and Old Lace",
+      "rules": {
+        "genre": ["comedy"],
+        "age": "<12",
+        "company": ["alone", "friends", "family"],
+        "studio": "Warner Bros",
+        "franchise": "no",
+        "actor": "Cary Grant",
+        "director": "Frank Capra",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "Charade",
+      "rules": {
+        "genre": ["mystery", "thriller", "comedy"],
+        "age": "12-15",
+        "company": ["alone", "friends"],
+        "studio": "Universal Pictures",
+        "franchise": "no",
+        "actor": "Cary Grant",
+        "director": "Frank Capra",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "The Pink Panther",
+      "rules": {
+        "genre": ["comedy"],
+        "age": "<12",
+        "company": ["alone", "friends", "family"],
+        "studio": "United Artists",
+        "franchise": "no",
+        "actor": "Peter Sellers",
+        "director": "Blake Edwards",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "Operation Petticoat",
+      "rules": {
+        "genre": ["comedy"],
+        "age": "<12",
+        "company": ["alone", "friends", "family"],
+        "studio": "Universal Pictures",
+        "franchise": "no",
+        "actor": "Cary Grant",
+        "director": "Blake Edwards",
+        "runtime": ">2h,<3h"
+      }
+    },
+	{
+      "name": "Breakfast at Tiffany's",
+      "rules": {
+        "genre": ["comedy", "romance"],
+        "age": "12-15",
+        "company": ["alone", "friends"],
+        "studio": "Paramount Pictures",
+        "franchise": "no",
+        "actor": "Audrey Hepburn",
+        "director": "Blake Edwards",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "Frankenstein",
+      "rules": {
+        "genre": ["horror"],
+        "age": ">15",
+        "company": ["alone", "friends"],
+        "studio": "Universal Pictures",
+        "franchise": "no",
+        "actor": "Boris Karloff",
+        "director": "James Whale",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "The Phantom of the Opera",
+      "rules": {
+        "genre": ["horror"],
+        "age": ">15",
+        "company": ["alone", "friends"],
+        "studio": "Universal Pictures",
+        "franchise": "no",
+        "actor": "Lon Chaney",
+        "director": "Rupert Julian",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "A Trip to the Moon",
+      "rules": {
+        "genre": ["adventure", "sci-Fi"],
+        "age": "<12",
+        "company": ["alone", "friends", "family"],
+        "studio": "Star Film Company",
+        "franchise": "no",
+        "actor": "Jeanne d'Alcy",
+        "director": "Georges Melies",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "Stalker",
+      "rules": {
+        "genre": ["adventure", "sci-Fi"],
+        "age": ">15",
+        "company": ["alone"],
+        "studio": "Mosfilm",
+        "franchise": "no",
+        "actor": "Aleksandr Kajdanovsky",
+        "director": "Andrei Tarkovsky",
+        "runtime": ">2h,<3h"
+      }
+    },
+	{
+      "name": "Solaris",
+      "rules": {
+        "genre": ["drama", "sci-Fi"],
+        "age": "<12",
+        "company": ["alone"],
+        "studio": "Mosfilm",
+        "franchise": "no",
+        "actor": "Donatas Banionis",
+        "director": "Andrei Tarkovsky",
+        "runtime": ">2h,<3h"
+      }
+    },
+	{
+      "name": "Moscow Does not Believe in Tears",
+      "rules": {
+        "genre": ["drama", "comedy", "romance"],
+        "age": "12-15",
+        "company": ["alone"],
+        "studio": "Mosfilm",
+        "franchise": "no",
+        "actor": "Vera Alentova",
+        "director": "Vladimir Menshov",
+        "runtime": ">2h,<3h"
+      }
+    },
+	{
+      "name": "Kin-Dza-Dza",
+      "rules": {
+        "genre": ["comedy", "adventure"],
+        "age": "<12",
+        "company": ["alone"],
+        "studio": "Mosfilm",
+        "franchise": "no",
+        "actor": "Stanislav Lyubshin",
+        "director": "Georgiy Daneliya",
+        "runtime": ">2h,<3h"
+      }
+    },
+	{
+      "name": "Despicable Me",
+      "rules": {
+        "genre": ["comedy", "adventure", "animation"],
+        "age": "<12",
+        "company": ["alone", "friends", "family"],
+        "studio": "Universal Pictures",
+        "franchise": "yes",
+        "actor": "Steve Carell",
+        "director": "Pierre Coffin",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "How to Train Your Dragon",
+      "rules": {
+        "genre": ["comedy", "adventure", "animation"],
+        "age": "12-15",
+        "company": ["alone", "friends", "family"],
+        "studio": "DreamWorks",
+        "franchise": "yes",
+        "actor": "Jay Baruchel",
+        "director": "Christopher Sanders",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "Bolt",
+      "rules": {
+        "genre": ["comedy", "adventure", "animation"],
+        "age": "<12",
+        "company": ["alone", "friends", "family"],
+        "studio": "Walt Disney",
+        "franchise": "no",
+        "actor": "John Travolta",
+        "director": "Chris Williams",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "Brave",
+      "rules": {
+        "genre": ["comedy", "adventure", "animation"],
+        "age": "<12",
+        "company": ["alone", "friends", "family"],
+        "studio": "Pixar",
+        "franchise": "no",
+        "actor": "Kelly Macdonald",
+        "director": "Brenda Chapman",
+        "runtime": "<=2h"
+      }
+    },
+	{
+      "name": "Up",
+      "rules": {
+        "genre": ["comedy", "adventure", "animation"],
+        "age": "<12",
+        "company": ["alone", "friends", "family"],
+        "studio": "Pixar",
+        "franchise": "no",
+        "actor": "Ed Asner",
+        "director": "Pete Docter",
+        "runtime": "<=2h"
+      }
+    }
+  ]
+}
